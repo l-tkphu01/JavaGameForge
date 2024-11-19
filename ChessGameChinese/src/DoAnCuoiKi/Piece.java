@@ -33,11 +33,11 @@ public abstract class Piece {
 
 	public abstract String getName();
 
-//	protected boolean outOfBounds(Position pos) {
-//		int row = pos.getRow();
-//		int col = pos.getCol();
-//		return row < 0 || row >= 10 || col < 0 || col >= 9;
-//	}
+	protected boolean outOfBounds(Position pos) {
+		int row = pos.getRow();
+		int col = pos.getCol();
+		return row < 0 || row >= 10 || col < 0 || col >= 9;
+	}
 
 	protected abstract void printValidMoves(ChessBoard board);
 
